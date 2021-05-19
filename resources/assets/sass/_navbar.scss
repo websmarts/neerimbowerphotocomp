@@ -1,0 +1,11 @@
+.navbar { height:90px;}
+
+@media only screen and (max-width: 768px) {
+   .navbar-brand{
+		max-width:80%
+	}
+}
+
+.navbar-right a {
+	font-size: 130%;
+}

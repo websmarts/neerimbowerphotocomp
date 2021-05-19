@@ -1,0 +1,203 @@
+
+// Fonts
+//@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+@import "navbar";
+
+.help-block {
+	color: #f44;
+}
+
+.dashboard .row {
+    margin-top: 50px;
+}
+
+// LEGACY MEDOO
+
+
+#entries .category {
+    border: 1px solid #666;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+#entries h2 {
+    margin: 2px;
+    background: #ddd;
+    font-size: 120%;
+    border: 1px solid #666;
+    padding: 5px;
+}
+#entries h3 {
+    margin: 2px;
+    background: #fff;
+    font-size: 100%;
+    font-weight: normal;
+    border: 0px solid #666;
+    padding: 5px;
+    border-top: 1px solid #666;
+    background-color: #888;
+    color: #fff;
+}
+
+#entries .entry {
+    border-bottom: 1px dashed #888;
+    margin-left: 20px;
+    overflow: hidden;
+
+}
+
+#entries .img-container {
+    width: 110px;
+    height: 110px;
+    padding: 2px;
+    float: left;
+
+
+}
+
+#entries .entry img {
+    max-width: 100px;
+    max-height: 100px;
+
+
+}
+#entries .entry span.delete {
+    display: block;
+    float: right;
+    margin-left: 10px;
+    font-size: 24px;
+    color: #f88;
+    
+}
+#entries .entry span.delete:hover {
+    cursor:pointer;
+    color: #f00;
+}
+
+#entries .entry span.promote {
+    display: block;
+    float: left;
+    width:80px;
+    margin-left: 10px;
+    font-size: 24px;
+    color: #333;
+    
+}
+#entries .entry span.promote:hover {
+    cursor:pointer;
+    color:#388;
+
+}
+
+
+#entries .left-spacer {
+    float: left;
+    height:50px;
+    width:110px;
+}
+#entries .entry span.title {
+    float: left;
+    font-size: 16px;
+}
+
+#entries .control {
+    float:right;
+    width: 50px;
+   
+    text-align: center;
+    cursor: pointer;
+}
+
+#entries .delete {
+    //background: #f44;
+}
+#entries .promote {
+    //background: #44f;
+    //font-size: 18px;
+    margin-right:20px;
+}
+
+
+/* msgBox styles */
+#msgBox.error {
+    color: white;
+    padding: 10px;
+    background: #d66;
+}
+#msgBox.success {
+    color: white;
+    padding: 10px;
+    background: #4c4;
+}
+#msgBox.warning {
+    color: white;
+    padding: 10px;
+    background: #66c;
+}
+
+#total_cost {
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.vcategory h3 {
+    background: #666;
+    color: #fff;
+    padding: 8px;
+}
+.vcategory h4 {
+    background: #ddd;
+    padding: 5px;
+}
+.ventry {
+    margin-bottom: 10px;
+}
+.vhead {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 3px;
+    margin-left:1px;
+    margin-right: 1px;
+}
+
+.display-none {
+    display: none;
+}
+
+#loadingDiv{
+  position:fixed;
+  top:0px;
+  right:0px;
+  width:100%;
+  height:100%;
+  background-color:#fff;
+  background-image:url('../images/loading.gif');
+  background-repeat:no-repeat;
+  background-position:center;
+  z-index:10000000;
+  opacity: 0.7;
+  filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+#loadingDiv h1 {
+    background-color: #fff;
+    color: #000;
+    font-size:16pt;
+    border: 0px solid #000;
+    text-align:center;
+    height: 50px;/*height needs to be set*/
+    width: 100px;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 200px;
+    left: 0;
+}
