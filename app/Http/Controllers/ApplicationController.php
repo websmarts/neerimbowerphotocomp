@@ -6,6 +6,7 @@ use App\Club;
 use App\Application;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
+use App\Http\Controllers\Controller;
 
 class ApplicationController extends Controller
 {
@@ -20,17 +21,10 @@ class ApplicationController extends Controller
         $options = [
             'salutations' => ['Mr', 'Mrs', 'Ms', 'Miss', 'Dr'],
             'yesno' => ['Yes', 'No'],
-            'vapsclubs' => Club::all()->pluck('name', 'id'),
+            
             'states' => ['ACT', 'NSW', 'NT', 'QLD', 'SA', 'TAS', 'VIC', 'WA'],
             'countries' => $this->countryList(),
-            'wherehear' =>[
-                'Flyer',
-                'Facebook',
-                'Entered Last Year',
-                'From my camera club',
-                'VAPS',
-                'Other'
-            ]
+           
 
         ];
 
@@ -55,16 +49,10 @@ class ApplicationController extends Controller
             'lastname' => 'required|string|max:255',
             'honours' => 'nullable|string|max:255',
             'address1' => 'required|string|max:255',
-            'address2' => 'nullable|string|nullable|max:255',
             'city' => 'required|string|max:255',
             'postcode' => 'required|integer|digits:4',
             'state' => 'required|string|max:255',
             'phone' => 'required|string|max:255',
-            'vaps_affiliated' => 'required|string|max:255',
-            'aps_member' => 'required|string|max:255',
-            'club_nomination' => 'nullable|string|max:255',
-            'where_hear'=> 'nullable|string|max:255',
-            'where_hear_other'=>'nullable|string|max:255',
             'confirm_terms' => 'required',
             'country' => 'nullable|string|max:255',
             'aps_membership_number' => 'nullable|string|size:6',
@@ -72,11 +60,7 @@ class ApplicationController extends Controller
         ]);
 
         
-        if($attributes['where_hear'] == 'Other'){
-            // Add in the where_hear_other field data
-            $attributes['where_hear'] .= ': '.$attributes['where_hear_other'];
-            unset($attributes['where_hear_other']);
-        }
+        
 
 
         $application = Application::firstOrCreate(['user_id' => $request->user()->id]);

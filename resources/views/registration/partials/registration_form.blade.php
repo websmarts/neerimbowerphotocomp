@@ -69,17 +69,7 @@
             @endif
         </div>
     </div>
-    <div class="row">
-        <div class="col-xs-12">
-            <label class="control-label">Address 2</label>
-            <input type="text" class="form-control address" name="address2" value="{{ old('address2',$application->address2) }}"/>
-            @if ($errors->has('address2'))
-                <span class="help-block">
-                    <strong>{{ $errors->first('address2') }}</strong>
-                </span>
-            @endif
-        </div>
-    </div>
+
 </div>
 <div class="form-group">
     <div class="row">
@@ -158,108 +148,9 @@
     </div>
 </div>
 
-<div class="form-group">
-	<div class="row">
 
-        
-        
 
-        <div class="col-xs-6">
-            <label class="control-label">Are you a member of APS?</label>
-            <select class="form-control" name="aps_member" >
-            <option value="">Select ...</option>
-            @include('registration.partials.form_select_options',['options_key'=>'yesno','input_name'=>'aps_member'])
-            </select>
-            @if ($errors->has('aps_member'))
-                <span class="help-block">
-                    <strong>{{ $errors->first('aps_member') }}</strong>
-                </span>
-            @endif
-        </div>
 
-        <div class="col-xs-6">
-            <label class="control-label">APS Membership number</label>
-            <input type="text" class="form-control" name="aps_membership_number" value="{{ old('aps_membership_number', $application->aps_membership_number) }}" />
-            @if ($errors->has('aps_membership_number'))
-                <span class="help-block">
-                    <strong>{{ $errors->first('aps_membership_number') }}</strong>
-                </span>
-            @endif
-        </div>
-
-	</div>
-</div>
-
-<div class="form-group">
-	<div class="row">
-		<div class="col-xs-6">
-            <label class="control-label">Do you belong to a VAPS affiliated club?</label>
-            <select class="form-control" name="vaps_affiliated" >
-            <option  value="">Select ...</option>
-            @include('registration.partials.form_select_options',['options_key'=>'yesno','input_name'=>'vaps_affiliated'])
-            </select>
-            @if ($errors->has('vaps_affiliated'))
-                <span class="help-block">
-                    <strong>{{ $errors->first('vaps_affiliated') }}</strong>
-                </span>
-            @endif
-        </div>
-
-        <div class="col-xs-6">
-            <label class="control-label">Name of (non-Victorian) club if interstate</label>
-            <input type="text" class="form-control" name="club_name" value="{{ old('club_name', $application->club_name) }}" />
-            @if ($errors->has('club_name'))
-                <span class="help-block">
-                    <strong>{{ $errors->first('club_name') }}</strong>
-                </span>
-            @endif
-        </div>
-        
-
-	</div>
-</div>
-
-<div class="form-group">
-    <div class="row">
-        <div class="col-xs-12">
-            <label class="control-label">Nominate the name of your Club for the special award (One club only)</label>
-            <select  class="form-control" name="club_nomination" >
-            <option  value="">Select club</option>
-            @include('registration.partials.form_select_options',['options_key'=>'vapsclubs','input_name'=>'club_nomination'])
-            </select>
-
-            @if ($errors->has('club_nomination'))
-                <span class="help-block">
-                    <strong>{{ $errors->first('club_nomination') }}</strong>
-                </span>
-            @endif
-        </div>
-    </div>
-</div>
-
-<div class="form-group">
-    <div class="row">
-        <div class="col-xs-6">
-            <label class="control-label">Where did you hear about the Competition?</label>
-            <select  class="form-control" name="where_hear" >
-            <option  value="">Select option</option>
-            @include('registration.partials.form_select_options',['options_key'=>'wherehear','input_name'=>'where_hear'])
-            </select>
-           
-        </div>
-
-        <div class="col-xs-6">
-        <label class="control-label" style="font-weight: normal">If OTHER please specify</label>
-            <input type="text" class="form-control" name="where_hear_other" value="{{ old('where_hear_other', $application->where_hear) }}" />
-            @if ($errors->has('where_hear'))
-                <span class="help-block">
-                    <strong>{{ $errors->first('where_hear') }}</strong>
-                </span>
-            @endif
-
-        </div>
-    </div>
-</div>
 
 <div class="row">
         <div class="col-xs-9">
