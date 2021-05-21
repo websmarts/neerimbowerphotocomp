@@ -48,10 +48,13 @@ class PhotosHandler
         $image = Image::make($photo);
 
         // Add in auto resizing to 1920px x 1080px
+        // Note this may rotate images if height was greater than width
         $image->resize(1920, 1080, function ($constraint) {
             $constraint->aspectRatio();
             $constraint->upsize();
         });
+        // $image->resize(1920, null);
+        // $image->resize(null, 1080);
 
 
 
@@ -61,7 +64,8 @@ class PhotosHandler
         }
 
         $filename = time() . '.' . strtolower($photo->getClientOriginalExtension());
-        $photo->storeAs('photos', $filename);
+        //$photo->storeAs('photos', $filename);
+        $image->save(storage_path('app/photos/' . $filename));
 
         // resize the image to a width of 300 and constrain aspect ratio (auto height)
 
