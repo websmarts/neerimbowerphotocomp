@@ -13,7 +13,7 @@
             @else
             <p>&nbsp;</p>
 
-            <h3>Procedure for the on-line entry for the Warragul National Photography Competition and Exhibition:</h3>
+            <h3>Procedure for the on-line entry for the Photography Competition </h3>
             <ol>
             <li> Register as a new entrant (Link on top right). You first need to register an email address. An email is then sent to you (please check your junk email folder!) with a link to verify that this is your email. It is important to move any such email to the Inbox before clicking on the link to confirm your email.</li>
 

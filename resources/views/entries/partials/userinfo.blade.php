@@ -46,19 +46,6 @@
 	<div class="col-xs-10 fdata"><?php echo user('email'); ?></div>
 	</div>
 
-	<div>
-	<div class="col-xs-6 flabel">I belong to a VAPS Affiliated Club:</div>
-	<div class="col-xs-6 fdata"><?php echo user('vaps_affiliated'); ?></div>
-	</div>
-
-	<div>
-	<div class="col-xs-6 flabel">I am a member of APS:</div>
-	<div class="col-xs-6 fdata"><?php echo user('aps_member'); ?></div>
-	</div>
-
-	<div>
-	<div class="col-xs-6 flabel">Nominated club for the Special Award:</div>
-	<div class="col-xs-6 fdata"><?php echo user('club_nomination'); ?></div>
-	</div>
+	
 </div>
 

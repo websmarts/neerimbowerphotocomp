@@ -7,7 +7,7 @@ $application  = $user->application;
 {{-- dump($user) --}}
 {{-- dump($user->application) --}}
 {{-- dump($user->photos->count()) --}}
-<p style="font-size:140%; font-weight: bold">Warragul National Photo Competition Entry Report</p>
+<p style="font-size:140%; font-weight: bold">Neerim Bower Photo Competition Entry Report</p>
 <p>{{ date('j-m-Y')}}</p>
 
 @if($application->paid)
@@ -38,20 +38,18 @@ $application  = $user->application;
 
 
 <p>Honours: {{ $application->honours }}</p>
-<p>Address: {{ $application->address1 }} {{ $application->address2 }} {{ $application->city }}
+<p>Address: {{ $application->address1 }} {{ $application->city }}
 {{ $application->state }} {{ $application->postcode }}  </p>
 
 <p>Phone: {{ $application->phone }}</p>
-<p>VAPS Affiliated: {{ $application->vaps_affiliated }} </p>
-<p>APS Member: {{ $application->aps_member }} </p>
-<p>Club nomination: {{ $application->club_nomination }} <p>
+
 <p>Return postage amount ($): {{ number_format($application->return_postage,2) }}<br>
 Return option selected: {{ $application->return_post_option or ' - '}} </p>
 <p>Cost of enrties ($): {{ number_format($application->entries_cost,2) }}</p>
 
 <p>You may log back into your account at any stage during the competition to review you entry details. </p>
 
-<p>You can pay for your entry fee by selecting the payment option on the dashboard of the competion web site - http://potocomp.warragulnational.org </p>
+<p>You can pay for your entry fee by selecting the payment option on the dashboard of the competion web site - http://photocomp.neerimbower.com.au </p>
 
 <p>PLEASE ADDRESS ENTRIES TO</p>
 <p>{{ $settings->title }}<br />

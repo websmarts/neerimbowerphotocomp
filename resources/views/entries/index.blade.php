@@ -16,7 +16,6 @@
                         </div>
                     @endif
 
-                     <!-- AT include('entries.partials.userinfo')-->
                      <div id="loadingDiv" class="display-none">
                         <div>
                             <h1>Please wait...</h1>
