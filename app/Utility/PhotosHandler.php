@@ -47,6 +47,14 @@ class PhotosHandler
 
         $image = Image::make($photo);
 
+        // Add in auto resizing to 1920px x 1080px
+        $image->resize(1920, 1080, function ($constraint) {
+            $constraint->aspectRatio();
+            $constraint->upsize();
+        });
+
+
+
         $response = $this->checkImageDimensions($image);
         if($response !== null){
             return $response;
