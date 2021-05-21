@@ -30,7 +30,7 @@
 
             <!-- Branding Image -->
             <a class="navbar-brand" style="padding:0" href="{{ url('/') }}">
-                <img src="{{ asset('images/logo.jpg') }} " class="img-responsive" title="{{ $settings->title  }}" />
+                <img style="max-height:88px" src="{{ asset('images/logo.jpg') }} " class="img-responsive" title="{{ $settings->title  }}" />
             </a>
         </div>
 
