@@ -56,7 +56,7 @@ return [
      */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'photocomp@warragulnational.org'),
+        'address' => env('MAIL_FROM_ADDRESS', 'photocomp@neerimbower.com.au'),
         'name' => env('MAIL_FROM_NAME', 'Photo Competition'),
     ],
 
