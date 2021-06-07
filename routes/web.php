@@ -18,6 +18,11 @@ use Intervention\Image\Facades\Image;
 |
  */
 
+ Route::get('phpinfo', function(){
+
+    echo phpinfo();
+    exit;
+ });
  
 // preview mailable
 Route::get('/mailable', function () {

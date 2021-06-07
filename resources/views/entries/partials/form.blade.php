@@ -85,16 +85,7 @@
 {{-- dump($application->toArray()) --}}
 {{-- dump($returnOptions) --}}
 
-<p>PLEASE ADDRESS ENTRIES TO</p>
-<p>{{ $settings->title }}<br />
-	P.O. Box 436, Warragul. Vic. 3820<br />
-	OR DELIVER TO<br />
-	Roylaines P/L 16 Smith Street,<br />Warragul. Vic. 3820.<br />
-	or<br />
-	Roylaines P/L 148 Main Street,<br />Pakenham. Vic. 3810.<br />
-	or<br />
-	Digital Works,<br />Unit 2/34-36 Melverton Drive,<br />Hallam. Vic. 3803.
-</p>
+<!--  -->
 <hr>
 
 <p>ENTRY FEES<br />
