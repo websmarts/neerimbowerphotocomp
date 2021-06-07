@@ -28,6 +28,7 @@ class SettingsController extends Controller
             'paypal_mode' => 'required',
             'flagfall_cost' => 'required|numeric|min:0',
             'digital_section_cost' => 'required|numeric|min:0',
+            'digital_only_entry_surcharge' => 'required|numeric|min:0',
             'print_section_cost' => 'required|numeric|min:0'
     
         ]);
