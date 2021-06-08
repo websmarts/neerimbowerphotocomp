@@ -20,10 +20,12 @@
 				<div>IMPORTANT: Image files must be:
 					<ul>
 						<li>JPEG format.</li>
-						<li>No more than 1920 pixels wide.</li>
-						<li>No more than 1080 pixels high.</li>
-						<li>No more than a 3MB file size.</li>
+						<li>No more than 1920 pixels wide.*</li>
+						<li>No more than 1080 pixels high.*</li>
+						<li>No more than a 24MB file size.</li>
+						
 					</ul>
+					<div>* Larger images will be resized to ensure they do not exceed max height and width limits</div>
 
 				</div>
 			</div>

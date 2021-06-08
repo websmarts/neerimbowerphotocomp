@@ -519,11 +519,11 @@ window.onload = function () {
       //console.log(filename,extension,filesize)
       hideMessage('xhr upload line 492');
 
-      if (!/jpe?g$/i.test(extension) || filesize > 4096) {
+      if (!/jpe?g$/i.test(extension) || filesize > 25600) {
         //this.removeCurrent();
         //this.clearQueue();
         //alert('Warning invalid file selected');
-        showMessage('Files must be a JPEG and smaller than 4MB', 'danger');
+        showMessage('Files must be a JPEG and smaller than 24MB', 'danger');
         selectFileBtn.innerHTML = 'Click here to <br>select image to upload';
         return false;
       }
