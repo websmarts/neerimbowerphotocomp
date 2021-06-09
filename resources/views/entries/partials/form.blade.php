@@ -1,7 +1,4 @@
-<p class="alert alert-warning"><strong>IMPORTANT NOTICE </strong>-
-	Category definitions are clearly defined <a href="http://www.warragulnational.org/category-definitions/" target="_blank" title="Category definitions for entries"><strong>here</strong></a> and it is IMPORTANT all entries comply with
-	the category requirements to avoid being rejected. Please review the definitions before submitting your entries in any category.
-</p>
+
 
 <div class="no-print" id="upload_form">
 
@@ -20,12 +17,11 @@
 				<div>IMPORTANT: Image files must be:
 					<ul>
 						<li>JPEG format.</li>
-						<li>No more than 1920 pixels wide.*</li>
-						<li>No more than 1080 pixels high.*</li>
+						<li>Image files greater than 1920px wide and 1080px high will be automatically resized on upload to fit within these dimensions</li>
 						<li>No more than a 24MB file size.</li>
 						
 					</ul>
-					<div>* Larger images will be resized to ensure they do not exceed max height and width limits</div>
+					
 
 				</div>
 			</div>
