@@ -6,7 +6,7 @@
 </head>
 <body style="font-family:arial">
 
-<p style="font-size:140%; font-weight: bold">Warragul National Photo Competition Entry Report</p>
+<p style="font-size:140%; font-weight: bold">Neerim Bower Photo Competition Entry Report</p>
 
 
 @if($user->application->txn_id > ' ' )
